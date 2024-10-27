@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&display=swap&family=Open+Sans&display=swap&family=Courier&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SKATESHOP</title>
+</head>
+
+<body>
+    <header>
+        <table style="border-spacing: 10px;">
+
+        </table>
+    </header>
+
+    <table style="border-spacing: 30px;">
+        <tr>
+            <td colspan="4" style="collapse: 2px">
+                <ul>
+                    <li>
+                        <a class="custom-button inative" href="index.html" title="Página principal">Pricipal</a>
+                    </li>
+                    <li>
+                        <a class="custom-button inative" href="links.html" title="Links">Links</a>
+                    </li>
+                    <li>
+                        <a class="custom-button inative" href="imagens.html" title="Imagens">Imagens</a>
+                    </li>
+                    <li>
+                        <a class="custom-button active" href="fale_conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <form action="#" method="post">
+        <table style="border-spacing: 30px;">
+            <tr>
+                <td>
+                    <h1 style="font-size: 58px; margin-bottom: 1px">Entre em contato! <h1>
+                            </p>
+                </td>
+            </tr>
+        </table>
+
+        <table style="border-spacing: 30px;">
+            <tr>
+                <td>
+                    <p>
+                        <label for="nome">Nome</label>
+                        <br>
+                        <input type="text" id="nome" title="Digite seu nome" placeholder="Digite seu nome" required>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="genero-container">
+                        <label>Gênero:</label><br>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" id="feminino" name="genero" value="feminino">
+                        <label for="feminino">Feminino</label>
+
+                        <input type="radio" id="outro" name="genero" value="outro">
+                        <label for="outro">Outro</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="assunto">Assunto:</label><br>
+                        <select id="assunto" name="assunto" required>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" title="Digite seu email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="email"
+                            placeholder="Digite seu email" required>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="phone">Telefone</label><br>
+                        <input type="tel" id="phone" title="Digite seu telefone" pattern="\(\d{2}\)\d{5}-\d{4}"
+                            placeholder="Digite seu telefone" required>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="message">Mensagem</label>
+                        <br>
+                        <textarea id="message" title="Digite aqui sua mensagem"
+                            placeholder="Digite aqui sua mensagem"></textarea>
+                    </p>
+                    <button type="button" onclick="contate_me()" class="custom-button-submit"
+                        style="margin-left: 0;">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <footer>
+        <p>copyright © 2024</p>
+
+    </footer>
+</body>
+<script src="static/js/controller.js"></script>
+
+</html>
