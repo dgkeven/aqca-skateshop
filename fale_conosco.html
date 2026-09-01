@@ -39,12 +39,11 @@
             </td>
         </tr>
     </table>
-    <form action="#" method="post">
+    <form action="#" method="post" onsubmit="send_me_notify(event)">
         <table style="border-spacing: 30px;">
             <tr>
                 <td>
-                    <h1 style="font-size: 58px; margin-bottom: 1px">Entre em contato! <h1>
-                            </p>
+                    <h1 style="font-size: 58px; margin-bottom: 1px">Entre em contato!</h1>
                 </td>
             </tr>
         </table>
@@ -114,7 +113,7 @@
                         <textarea id="message" title="Digite aqui sua mensagem"
                             placeholder="Digite aqui sua mensagem"></textarea>
                     </p>
-                    <button type="button" onclick="contate_me()" class="custom-button-submit"
+                    <button type="submit" class="custom-button-submit"
                         style="margin-left: 0;">Enviar</button>
                 </td>
             </tr>
@@ -126,6 +125,6 @@
 
     </footer>
 </body>
-<script src="static/js/controller.js"></script>
+<script src="controles.js"></script>
 
 </html>
